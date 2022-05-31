@@ -1,0 +1,19 @@
+.floatLeft {
+    float: left;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+}
+fieldset {
+    width: 25%;
+    text-align: center;
+}
+.floatRight {
+    float: right;
+    padding-left: 10px;
+}
+.smallinputwidth {
+    width: 30%;
+}

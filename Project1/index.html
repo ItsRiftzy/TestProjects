@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h3>This is a part of my test projects. If you like what you see, head back to my github page</h3>
+    </header>
+    <main>
+        <h1>Survey form</h1>
+        <form method="post">
+            <fieldset id="personalInfo">
+                <section class="floatLeft">
+                    <label for="fname">What is your First name?</label><br>
+                        <input type="text" placeholder="First Name" class="inputs" id="fnameInput"><br>
+                    <label for="lname">What is your Last name?</label><br>
+                        <input type="text" placeholder="Last Name" class="inputs" id="lnameInput"><br>
+                    <label for="age">Enter your age</label><br>
+                        <input type="number" placeholder="Age">
+                </section>
+                <section class="floatRight"></section>
+                    <label for="gender">Gender</label><br>
+                        <input type="radio" name="gender"><label> Male</label><br>
+                        <input type="radio" name="gender"><label> Female</label><br>
+                    <label>Other (please specify)</label><br>
+                        <input class="smallinputwidth" type="text">
+                </section>
+            </fieldset>
+            <fieldset id="feedbackArea"></fieldset>
+            <fieldset id="submitArea"></fieldset>
+        </form>
+    </main>
+</body>
+</html>
