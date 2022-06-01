@@ -1,19 +1,45 @@
+:root {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    background-image: linear-gradient()
+}
 .floatLeft {
     float: left;
     border-right: 1px solid black;
-    padding-right: 10px;
+}
+header {
+    text-align: center;
+    background-color: lightgray;
+    padding: 2px;
 }
 input {
     margin-bottom: 20px;
 }
+main h1 {
+    text-align: center;
+}
+main {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
 fieldset {
-    width: 25%;
     text-align: center;
 }
 .floatRight {
     float: right;
-    padding-left: 10px;
+    padding-left: 0.8rem
 }
-.smallinputwidth {
-    width: 30%;
+.u {
+    margin: 0.8rem;
+    text-decoration: underline;
+    
+}
+label {
+    margin-bottom: 10px;
 }

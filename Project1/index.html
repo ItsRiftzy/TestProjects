@@ -13,26 +13,49 @@
     </header>
     <main>
         <h1>Survey form</h1>
-        <form method="post">
+        <form method="GET" action="formArea.htm">
             <fieldset id="personalInfo">
                 <section class="floatLeft">
-                    <label for="fname">What is your First name?</label><br>
-                        <input type="text" placeholder="First Name" class="inputs" id="fnameInput"><br>
-                    <label for="lname">What is your Last name?</label><br>
-                        <input type="text" placeholder="Last Name" class="inputs" id="lnameInput"><br>
-                    <label for="age">Enter your age</label><br>
-                        <input type="number" placeholder="Age">
+                    <label class="u" for="fname">What is your First name?</label><br>
+                        <input name="fname" type="text" placeholder="First Name" class="inputs" id="fnameInput"><br>
+                    <label class="u" for="lname">What is your Last name?</label><br>
+                        <input name="lname" type="text" placeholder="Last Name" class="inputs" id="lnameInput"><br>
+                    <label class="u" for="age" min="13" required>Enter your age</label><br>
+                        <input name="age" type="number" placeholder="Age">
                 </section>
                 <section class="floatRight"></section>
-                    <label for="gender">Gender</label><br>
-                        <input type="radio" name="gender"><label> Male</label><br>
-                        <input type="radio" name="gender"><label> Female</label><br>
-                    <label>Other (please specify)</label><br>
+                    <label for="gender" class="u">Gender</label><br>
+                        <input type="radio" name="gender" required><label> Male</label><br>
+                        <input type="radio" name="gender" required><label> Female</label><br>
+                    <label class="u">Other (please specify)</label><br>
                         <input class="smallinputwidth" type="text">
                 </section>
             </fieldset>
-            <fieldset id="feedbackArea"></fieldset>
-            <fieldset id="submitArea"></fieldset>
+            <fieldset id="feedbackArea">
+                <section id="textAreas">
+                    <label for="referral">How were you referred you to our website?</label>
+                        <select name="referral">
+                            <option value="1" selected="selected">(select one)</option>
+                            <option value="2">YouTube</option>
+                            <option value="3">Our Website</option>
+                            <option value="4">Reddit</option>
+                        </select><br>
+                    <label for="satisfaction">How satisfied are you with our website?</label>
+                        <select name="satisfaction">
+                            <option value="1" selected="selected">(select one)</option>
+                            <option value="2">Not Satisfied</option>
+                            <option value="3">Slightly Satisfied</option>
+                            <option value="4">So-So</option> 
+                            <option value="5">Very Satisfied</option>
+                        </select><br>
+                    <label for="changes">What could we change about our website?</label><br>
+                        <textarea name="changes" cols="20" rows="3" id="textAreaChanges" placeholder="What could we change?"></textarea>
+                </section>
+            </fieldset>
+            <fieldset id="submitArea">
+                <label for="submitbtn">Press below to submit the form.</label><br>
+                <input type="submit">
+            </fieldset>
         </form>
     </main>
 </body>
