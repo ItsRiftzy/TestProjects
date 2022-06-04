@@ -21,40 +21,39 @@
                     <label class="u" for="lname">What is your Last name?</label><br>
                         <input name="lname" type="text" placeholder="Last Name" class="inputs" id="lnameInput"><br>
                     <label class="u" for="age" min="13" required>Enter your age</label><br>
-                        <input name="age" type="number" placeholder="Age">
+                        <input name="age" type="number" placeholder="Age" id="ageinput">
                 </section>
                 <section class="floatRight"></section>
                     <label for="gender" class="u">Gender</label><br>
-                        <input type="radio" name="gender" required><label> Male</label><br>
-                        <input type="radio" name="gender" required><label> Female</label><br>
-                    <label class="u">Other (please specify)</label><br>
-                        <input class="smallinputwidth" type="text">
+                        <input class="radiobtn" type="radio" name="gender" required><label> Male</label><br>
+                        <input class="radiobtn" type="radio" name="gender" required><label> Female</label><br>
+                        <input class="radiobtn" type="radio" name="gender" required><label> Other</label><br>
                 </section>
             </fieldset>
             <fieldset id="feedbackArea">
                 <section id="textAreas">
-                    <label for="referral">How were you referred you to our website?</label>
-                        <select name="referral">
+                    <label class="u" id="referral" for="referral">How were you referred you to our website?</label><br>
+                        <select class="mb" name="referral">
                             <option value="1" selected="selected">(select one)</option>
                             <option value="2">YouTube</option>
-                            <option value="3">Our Website</option>
+                            <option value="3">A friend</option>
                             <option value="4">Reddit</option>
                         </select><br>
-                    <label for="satisfaction">How satisfied are you with our website?</label>
-                        <select name="satisfaction">
+                    <label id="satisfactionlbl" class="u" for="satisfaction">How satisfied are you with our website?</label><br>
+                        <select class="mb" name="satisfaction">
                             <option value="1" selected="selected">(select one)</option>
                             <option value="2">Not Satisfied</option>
                             <option value="3">Slightly Satisfied</option>
                             <option value="4">So-So</option> 
                             <option value="5">Very Satisfied</option>
                         </select><br>
-                    <label for="changes">What could we change about our website?</label><br>
-                        <textarea name="changes" cols="20" rows="3" id="textAreaChanges" placeholder="What could we change?"></textarea>
+                    <label class="u" id="changes" for="changes">What could we change about our website?</label><br>
+                        <textarea class="mb" name="changes" cols="40" rows="3" id="textAreaChanges" placeholder="What could we change?"></textarea>
                 </section>
             </fieldset>
             <fieldset id="submitArea">
-                <label for="submitbtn">Press below to submit the form.</label><br>
-                <input type="submit">
+                <label class="mb" id="submitlbl" for="submitbtn">Press below to submit the form.</label><br>
+                <button id="submitbtn">Submit</button>
             </fieldset>
         </form>
     </main>

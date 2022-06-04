@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Montserrat&display=swap');
 :root {
     font-size: 16px;
     margin: 0;
@@ -5,8 +6,10 @@
     box-sizing: border-box;
 }
 html {
-    font-family: sans-serif;
-    background-image: linear-gradient()
+    font-family: "Chivo";
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/034/893/730/large/jorge-hardt-v1-blue-night-forest-1920x1080.jpg?1613524598);
+    background-repeat: no-repeat;
+    
 }
 .floatLeft {
     float: left;
@@ -14,11 +17,13 @@ html {
 }
 header {
     text-align: center;
-    background-color: lightgray;
+    background-color: rgba(211,211,211,0.2);
     padding: 2px;
 }
 input {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 6px
 }
 main h1 {
     text-align: center;
@@ -30,6 +35,10 @@ main {
 }
 fieldset {
     text-align: center;
+    border-radius: 7px;
+    margin: 10px;
+    background-color: rgb(200, 200, 200, 0.5);
+    fill-opacity: 10%;
 }
 .floatRight {
     float: right;
@@ -40,6 +49,46 @@ fieldset {
     text-decoration: underline;
     
 }
+.radiobtn {
+    margin: 15px;
+}
 label {
-    margin-bottom: 10px;
+    margin-bottom: 10x;
+}
+.mb {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+#submitbtn {
+    width: 100%;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+#submitlbl {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+input, textarea {
+    opacity: 50%
+}
+input::placeholder {
+    text-align: center;
+}
+input, select {
+    text-align: center;
+    opacity: 75%
 }
